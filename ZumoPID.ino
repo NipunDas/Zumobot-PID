@@ -24,7 +24,7 @@ void setup() {
  motors.setSpeeds(0, 0);
  encoders.init();
  lcd.clear();
- delay(1000);
+ delay(10000);
 }
 
 //turns the robot to the right
@@ -39,7 +39,7 @@ void spinLeft(int motorSpeed) {
 
 //moves the robot forward (negative motor speed to move backwards)
 void goForward(int motorSpeed){
-  motors.setSpeeds(motorSpeed*1.05, motorSpeed);
+  motors.setSpeeds(motorSpeed*1.06, motorSpeed);
 }
 
 //stops the robot
